@@ -1,9 +1,11 @@
 # cs100project-atmsimulator
 ATM Account Simulator (not an ATM) for my first ever CS-100 project
 
+[NOT SHARING SOURCE FILES FOR PRIVACY REASONS - ONLY BUILT FILES ARE AVAILABLE]
+
 ATM Account Simulator
 Features implemented:
--	All the features listed in the project ideas pdf have been implemented (including additional features). Please refer to the feature set from there.
+-	All the features listed in the project requirments file have been implemented (including additional features). Please refer to the feature set from there.
 
 General notes:
 -	All files are modified in /build, source files are not modified when the executable is run
