@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/Haadi/OneDrive - Higher Education Commission/Desktop/LUMS/Assignments etc/CS100 Project/ATM Account Simulator/Group34_ATMAccountSimulator_Rev5.1/build",
+  "command": "C:\\MinGW\\bin\\g++.exe -DTGUI_DYNAMIC @CMakeFiles/ATMProject.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\ATMProject.dir\\src\\main.cpp.obj -c \"C:\\Users\\Haadi\\OneDrive - Higher Education Commission\\Desktop\\LUMS\\Assignments etc\\CS100 Project\\ATM Account Simulator\\Group34_ATMAccountSimulator_Rev5.1\\src\\main.cpp\"",
+  "file": "C:/Users/Haadi/OneDrive - Higher Education Commission/Desktop/LUMS/Assignments etc/CS100 Project/ATM Account Simulator/Group34_ATMAccountSimulator_Rev5.1/src/main.cpp"
+}
+]

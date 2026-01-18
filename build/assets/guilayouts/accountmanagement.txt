@@ -1,0 +1,266 @@
+Renderer.1 {
+    textcolor = rgb(190, 190, 190);
+    textcolorhover = rgb(250, 250, 250);
+    texture = "themes/Black.png" Part( 0, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturedisabled = None;
+    texturedown = "themes/Black.png" Part(90, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturefocused = "themes/Black.png" Part(135, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturehover = "themes/Black.png" Part(45, 64, 45, 50) Middle(10, 0, 25, 50);
+}
+
+Picture._background {
+    Size = (1066, 600);
+
+    Renderer {
+        opacity = 1;
+        texture = "assets/images/atmbackground.png";
+    }
+}
+
+Button.loginButton {
+    Position = (-100 + 533, 386);
+    Size = (200, 80);
+    Text = "Log In";
+    TextSize = 20;
+    renderer = &1;
+}
+
+Button.createuserButton {
+    Position = (180, 386);
+    Size = (200, 80);
+    Text = "Create Account";
+    TextSize = 20;
+    renderer = &1;
+}
+
+Button.deleteuserButton {
+    Position = (685, 386);
+    Size = (200, 80);
+    Text = "Delete Account";
+    TextSize = 20;
+    renderer = &1;
+}
+
+Label._title {
+    AutoSize = true;
+    HorizontalAlignment = Center;
+    IgnoreMouseEvents = true;
+    Position = (-354 + 533, 160);
+    ScrollbarPolicy = Never;
+    Size = (707.6, 81);
+    Text = "ATM Account Simulator";
+    TextSize = 60;
+    VerticalAlignment = Center;
+
+    Renderer {
+        textcolor = #AAB8CC;
+        textoutlinecolor = black;
+        textoutlinethickness = 1;
+        texturebackground = None;
+
+        scrollbar {
+            arrowbackgroundcolor = rgba(160, 160, 160, 215);
+            arrowbackgroundcolorhover = rgba(170, 170, 170, 215);
+            arrowcolor = rgba(200, 200, 200, 215);
+            arrowcolorhover = rgba(225, 225, 225, 215);
+            thumbcolor = rgba(185, 185, 185, 215);
+            thumbcolorhover = rgba(195, 195, 195, 215);
+            trackcolor = rgba(160, 160, 160, 215);
+            trackcolorhover = rgba(170, 170, 170, 215);
+        }
+    }
+}
+
+Label._creatortag {
+    AutoSize = true;
+    IgnoreMouseEvents = true;
+    Position = (990, 590);
+    ScrollbarPolicy = Never;
+    Size = (74, 11);
+    Text = "By Haadi Farhan";
+    TextSize = 8;
+
+    Renderer {
+        opacity = 100;
+        textcolor = #3F3532;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/BabyBlue.png" Part(20, 2, 16, 16);
+            texturearrowup = "themes/BabyBlue.png" Part(2, 2, 16, 16);
+            texturethumb = "themes/BabyBlue.png" Part(414, 2, 16, 32);
+            texturetrack = "themes/BabyBlue.png" Part(432, 2, 16, 32);
+        }
+    }
+}
+
+ChildWindow.quitPopup {
+    KeepInParent = true;
+    Position = (330, 210);
+    Size = (400, 120);
+    Title = "Quit Program";
+    TitleAlignment = Left;
+    TitleButtons = Close;
+    Visible = false;
+
+    Renderer {
+        backgroundcolor = rgb( 80, 80, 80);
+        bordercolor = Black;
+        borders = (1, 1, 1, 1);
+        distancetoside = 5;
+        maximizebutton = {
+texture = "themes/Black.png" Part(48, 194, 15, 15);
+texturedown = "themes/Black.png" Part(78, 194, 15, 15);
+texturehover = "themes/Black.png" Part(63, 194, 15, 15);
+};
+        minimizebutton = {
+texture = "themes/Black.png" Part(93, 194, 15, 15);
+texturedown = "themes/Black.png" Part(123, 194, 15, 15);
+texturehover = "themes/Black.png" Part(108, 194, 15, 15);
+};
+        paddingbetweenbuttons = 2;
+        showtextontitlebuttons = false;
+        texturebackground = None;
+        texturetitlebar = "themes/Black.png" Part(48, 154, 75, 25) Middle(25, 0, 25, 25);
+        titlecolor = rgb(190, 190, 190);
+
+        closebutton {
+            texture = "themes/Black.png" Part(48, 179, 15, 15);
+            texturedown = "themes/Black.png" Part(78, 179, 15, 15);
+            texturehover = "themes/Black.png" Part(63, 179, 15, 15);
+        }
+    }
+
+    Label._popuplabel {
+        IgnoreMouseEvents = true;
+        Position = (30, 20);
+        ScrollbarPolicy = Never;
+        Size = (332.8, 60);
+        Text = "Are you sure you want to exit\nthe program?";
+        TextSize = 20;
+
+        Renderer {
+            textcolor = rgb(190, 190, 190);
+            texturebackground = None;
+
+            scrollbar {
+                texturearrowdown = "themes/Black.png" Part(163, 174, 20, 20) Middle(0, 1, 20, 19);
+                texturearrowdownhover = "themes/Black.png" Part(183, 174, 20, 20) Middle(0, 1, 20, 19);
+                texturearrowup = "themes/Black.png" Part(163, 154, 20, 20) Middle(0, 0, 20, 19);
+                texturearrowuphover = "themes/Black.png" Part(183, 154, 20, 20) Middle(0, 0, 20, 19);
+                texturethumb = "themes/Black.png" Part(143, 154, 20, 20);
+                texturethumbhover = "themes/Black.png" Part(143, 174, 20, 20);
+                texturetrack = "themes/Black.png" Part(123, 154, 20, 20);
+                texturetrackhover = "themes/Black.png" Part(123, 174, 20, 20);
+            }
+        }
+    }
+
+    Button.noButton {
+        Position = (320, 80);
+        Size = (60, 30);
+        Text = No;
+        TextSize = 18;
+        renderer = &1;
+    }
+
+    Button.yesButton {
+        Position = (250, 80);
+        Size = (60, 30);
+        Text = Yes;
+        TextSize = 18;
+        renderer = &1;
+    }
+}
+
+Button.quitButton {
+    Position = (945, 536);
+    Size = (110, 50);
+    Text = Quit;
+    TextSize = 20;
+    renderer = &1;
+}
+
+ChildWindow.terminatePopup {
+    KeepInParent = true;
+    Position = (330, 260);
+    Size = (400, 120);
+    Title = Error;
+    TitleAlignment = Left;
+    TitleButtons = Close;
+    Visible = false;
+
+    Renderer {
+        backgroundcolor = rgb(230, 230, 230);
+        bordercolor = white;
+        borders = (2, 0, 2, 2);
+        distancetoside = 3;
+        maximizebutton = {
+texture = "themes/BabyBlue.png" Part(2, 90, 25, 25);
+texturedown = "themes/BabyBlue.png" Part(56, 90, 25, 25);
+texturehover = "themes/BabyBlue.png" Part(29, 90, 25, 25);
+};
+        minimizebutton = {
+texture = "themes/BabyBlue.png" Part(83, 90, 25, 25);
+texturedown = "themes/BabyBlue.png" Part(137, 90, 25, 25);
+texturehover = "themes/BabyBlue.png" Part(110, 90, 25, 25);
+};
+        paddingbetweenbuttons = 1;
+        showtextontitlebuttons = false;
+        texturebackground = None;
+        texturetitlebar = "themes/BabyBlue.png" Part(317, 2, 62, 31) Middle(10, 0, 42, 31);
+        titlebarcolor = white;
+        titlecolor = rgb(100, 100, 100);
+
+        closebutton {
+            texture = "themes/BabyBlue.png" Part(96, 2, 25, 25);
+            texturedown = "themes/BabyBlue.png" Part(150, 2, 25, 25);
+            texturehover = "themes/BabyBlue.png" Part(123, 2, 25, 25);
+        }
+    }
+
+    Label.errorText {
+        IgnoreMouseEvents = true;
+        Position = (30, 20);
+        ScrollbarPolicy = Never;
+        Size = (332.8, 50);
+        Text = "Error loading data files. \nPlease check /assets/data";
+        TextSize = 20;
+
+        Renderer {
+            backgroundcolor = transparent;
+            bordercolor = #3C3C3C;
+            borders = (0, 0, 0, 0);
+            textcolor = #3C3C3C;
+            texturebackground = None;
+        }
+    }
+
+    Button.errorButton {
+        Position = (310, 80);
+        Text = Close;
+        TextSize = 18;
+
+        Renderer {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordisabled = #E6E6E6;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordisabled = #7D7D7D;
+            bordercolordown = black;
+            bordercolorfocused = #1E1EB4;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordisabled = #7D7D7D;
+            textcolordown = black;
+            textcolorhover = black;
+            texture = None;
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+Sat Nov 15 2025
+placeholderusername1,1234,67,10000,0
+username2,1111,1000,5000,5000
+newaccnam456,1234,200,500,0
+newacc56742424,1234,0,4000,0

@@ -1,0 +1,287 @@
+Renderer.1 {
+    textcolor = rgb(190, 190, 190);
+    textcolorhover = rgb(250, 250, 250);
+    texture = "themes/Black.png" Part( 0, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturedisabled = None;
+    texturedown = "themes/Black.png" Part(90, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturefocused = "themes/Black.png" Part(135, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturehover = "themes/Black.png" Part(45, 64, 45, 50) Middle(10, 0, 25, 50);
+}
+
+Picture._background {
+    Size = (1066, 600);
+
+    Renderer {
+        opacity = 1;
+        texture = "assets/images/atmbackground.png";
+    }
+}
+
+Label._creatortag {
+    AutoSize = true;
+    IgnoreMouseEvents = true;
+    Position = (990, 590);
+    ScrollbarPolicy = Never;
+    Size = (74, 11);
+    Text = "By Haadi Farhan";
+    TextSize = 8;
+
+    Renderer {
+        opacity = 100;
+        textcolor = #3F3532;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/BabyBlue.png" Part(20, 2, 16, 16);
+            texturearrowup = "themes/BabyBlue.png" Part(2, 2, 16, 16);
+            texturethumb = "themes/BabyBlue.png" Part(414, 2, 16, 32);
+            texturetrack = "themes/BabyBlue.png" Part(432, 2, 16, 32);
+        }
+    }
+}
+
+EditBox.usernameField {
+    DefaultText = Username;
+    Position = (363, 240);
+    Size = (340, 43.375);
+    TextSize = 20;
+
+    Renderer {
+        caretcolor = rgb(110, 110, 255);
+        defaulttextcolor = rgb(120, 120, 120);
+        defaulttextstyle = Regular;
+        padding = (6, 4, 6, 4);
+        selectedtextbackgroundcolor = rgb( 10, 110, 255);
+        selectedtextcolor = White;
+        textcolor = rgb(190, 190, 190);
+        texture = "themes/Black.png" Part(0, 114, 60, 40) Middle(15, 0, 30, 40);
+        texturedisabled = None;
+        texturefocused = "themes/Black.png" Part(120, 114, 60, 40) Middle(15, 0, 30, 40);
+        texturehover = "themes/Black.png" Part(60, 114, 60, 40) Middle(15, 0, 30, 40);
+    }
+}
+
+Label._title {
+    AutoSize = true;
+    IgnoreMouseEvents = true;
+    Position = (-234 + 533, 110);
+    ScrollbarPolicy = Never;
+    Size = (471.6, 81);
+    Text = "Delete Account";
+    TextSize = 60;
+
+    Renderer {
+        textcolor = #AAB8CC;
+        textoutlinecolor = black;
+        textoutlinethickness = 1;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/Black.png" Part(163, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowdownhover = "themes/Black.png" Part(183, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowup = "themes/Black.png" Part(163, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturearrowuphover = "themes/Black.png" Part(183, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturethumb = "themes/Black.png" Part(143, 154, 20, 20);
+            texturethumbhover = "themes/Black.png" Part(143, 174, 20, 20);
+            texturetrack = "themes/Black.png" Part(123, 154, 20, 20);
+            texturetrackhover = "themes/Black.png" Part(123, 174, 20, 20);
+        }
+    }
+}
+
+EditBox.pinField {
+    DefaultText = PIN;
+    MaximumCharacters = 4;
+    Position = (413, 300);
+    Size = (240, 43.375);
+    TextSize = 20;
+
+    Renderer {
+        caretcolor = rgb(110, 110, 255);
+        defaulttextcolor = rgb(120, 120, 120);
+        padding = (6, 4, 6, 4);
+        selectedtextbackgroundcolor = rgb( 10, 110, 255);
+        selectedtextcolor = White;
+        textcolor = rgb(190, 190, 190);
+        texture = "themes/Black.png" Part(0, 114, 60, 40) Middle(15, 0, 30, 40);
+        texturedisabled = None;
+        texturefocused = "themes/Black.png" Part(120, 114, 60, 40) Middle(15, 0, 30, 40);
+        texturehover = "themes/Black.png" Part(60, 114, 60, 40) Middle(15, 0, 30, 40);
+    }
+}
+
+Label.errorresponseText {
+    HorizontalAlignment = Center;
+    IgnoreMouseEvents = true;
+    Position = (370, 420);
+    ScrollbarPolicy = Never;
+    Size = (330, 27);
+    TextSize = 20;
+
+    Renderer {
+        borders = (0, 0, 0, 0);
+        textcolor = red;
+        textoutlinecolor = black;
+        textoutlinethickness = 1;
+        texturebackground = None;
+
+        scrollbar {
+            arrowbackgroundcolor = rgba(160, 160, 160, 215);
+            arrowbackgroundcolorhover = rgba(170, 170, 170, 215);
+            arrowcolor = rgba(200, 200, 200, 215);
+            arrowcolorhover = rgba(225, 225, 225, 215);
+            thumbcolor = rgba(185, 185, 185, 215);
+            thumbcolorhover = rgba(195, 195, 195, 215);
+            trackcolor = rgba(160, 160, 160, 215);
+            trackcolorhover = rgba(170, 170, 170, 215);
+        }
+    }
+}
+
+Button.backButton {
+    Position = (403, 446);
+    Size = (120, 60);
+    Text = Back;
+    TextSize = 20;
+    renderer = &1;
+}
+
+Button.deleteButton {
+    Position = (543, 446);
+    Size = (120, 60);
+    Text = Delete;
+    TextSize = 20;
+    renderer = &1;
+}
+
+EditBox.confirmdeleteField {
+    Alignment = Center;
+    DefaultText = ___;
+    MaximumCharacters = 3;
+    Position = (640, 368.312);
+    Size = (80, 43.375);
+    TextSize = 20;
+
+    Renderer {
+        caretcolor = rgb(110, 110, 255);
+        defaulttextcolor = red;
+        defaulttextstyle = Regular;
+        padding = (6, 4, 6, 4);
+        selectedtextbackgroundcolor = rgb( 10, 110, 255);
+        selectedtextcolor = white;
+        textcolor = red;
+        texture = "themes/Black.png" Part(0, 114, 60, 40) Middle(15, 0, 30, 40);
+        texturedisabled = None;
+        texturefocused = "themes/Black.png" Part(120, 114, 60, 40) Middle(15, 0, 30, 40);
+        texturehover = "themes/Black.png" Part(60, 114, 60, 40) Middle(15, 0, 30, 40);
+    }
+}
+
+Label._label {
+    AutoSize = true;
+    IgnoreMouseEvents = true;
+    Position = (330.1, 376.5);
+    ScrollbarPolicy = Never;
+    Size = (304.8, 27);
+    Text = "Type YES (in caps) to confirm:";
+    TextSize = 20;
+
+    Renderer {
+        bordercolor = black;
+        textcolor = red;
+        textoutlinecolor = black;
+        textoutlinethickness = 1;
+        texturebackground = None;
+
+        scrollbar {
+            arrowbackgroundcolor = rgba(160, 160, 160, 215);
+            arrowbackgroundcolorhover = rgba(170, 170, 170, 215);
+            arrowcolor = rgba(200, 200, 200, 215);
+            arrowcolorhover = rgba(225, 225, 225, 215);
+            thumbcolor = rgba(185, 185, 185, 215);
+            thumbcolorhover = rgba(195, 195, 195, 215);
+            trackcolor = rgba(160, 160, 160, 215);
+            trackcolorhover = rgba(170, 170, 170, 215);
+        }
+    }
+}
+
+ChildWindow.successPopup {
+    KeepInParent = true;
+    Position = (330, 240);
+    Size = (400, 120);
+    Title = Success;
+    TitleAlignment = Left;
+    TitleButtons = Close;
+    Visible = false;
+
+    Renderer {
+        backgroundcolor = rgb( 80, 80, 80);
+        bordercolor = Black;
+        borders = (1, 1, 1, 1);
+        distancetoside = 5;
+        maximizebutton = {
+texture = "themes/Black.png" Part(48, 194, 15, 15);
+texturedown = "themes/Black.png" Part(78, 194, 15, 15);
+texturehover = "themes/Black.png" Part(63, 194, 15, 15);
+};
+        minimizebutton = {
+texture = "themes/Black.png" Part(93, 194, 15, 15);
+texturedown = "themes/Black.png" Part(123, 194, 15, 15);
+texturehover = "themes/Black.png" Part(108, 194, 15, 15);
+};
+        paddingbetweenbuttons = 2;
+        showtextontitlebuttons = false;
+        texturebackground = None;
+        texturetitlebar = "themes/Black.png" Part(48, 154, 75, 25) Middle(25, 0, 25, 25);
+        titlecolor = rgb(190, 190, 190);
+
+        closebutton {
+            texture = "themes/Black.png" Part(48, 179, 15, 15);
+            texturedown = "themes/Black.png" Part(78, 179, 15, 15);
+            texturehover = "themes/Black.png" Part(63, 179, 15, 15);
+        }
+    }
+
+    Label._popuplabel {
+        IgnoreMouseEvents = true;
+        Position = (30, 30);
+        ScrollbarPolicy = Never;
+        Size = (332.8, 40);
+        Text = "Account deleted successfully.";
+        TextSize = 20;
+
+        Renderer {
+            textcolor = rgb(190, 190, 190);
+            texturebackground = None;
+
+            scrollbar {
+                texturearrowdown = "themes/Black.png" Part(163, 174, 20, 20) Middle(0, 1, 20, 19);
+                texturearrowdownhover = "themes/Black.png" Part(183, 174, 20, 20) Middle(0, 1, 20, 19);
+                texturearrowup = "themes/Black.png" Part(163, 154, 20, 20) Middle(0, 0, 20, 19);
+                texturearrowuphover = "themes/Black.png" Part(183, 154, 20, 20) Middle(0, 0, 20, 19);
+                texturethumb = "themes/Black.png" Part(143, 154, 20, 20);
+                texturethumbhover = "themes/Black.png" Part(143, 174, 20, 20);
+                texturetrack = "themes/Black.png" Part(123, 154, 20, 20);
+                texturetrackhover = "themes/Black.png" Part(123, 174, 20, 20);
+            }
+        }
+    }
+
+    Button.okButton {
+        Position = (310, 80);
+        Size = (70, 30);
+        Text = OK;
+        TextSize = 18;
+
+        Renderer {
+            textcolor = rgb(190, 190, 190);
+            textcolorhover = rgb(250, 250, 250);
+            texture = "themes/Black.png" Part( 0, 64, 45, 50) Middle(10, 0, 25, 50);
+            texturedisabled = None;
+            texturedown = "themes/Black.png" Part(90, 64, 45, 50) Middle(10, 0, 25, 50);
+            texturefocused = "themes/Black.png" Part(135, 64, 45, 50) Middle(10, 0, 25, 50);
+            texturehover = "themes/Black.png" Part(45, 64, 45, 50) Middle(10, 0, 25, 50);
+        }
+    }
+}

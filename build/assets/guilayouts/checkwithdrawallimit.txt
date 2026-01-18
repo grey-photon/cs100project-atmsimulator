@@ -1,0 +1,201 @@
+Renderer.1 {
+    textcolor = rgb(190, 190, 190);
+    textcolorhover = rgb(250, 250, 250);
+    texture = "themes/Black.png" Part( 0, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturedisabled = None;
+    texturedown = "themes/Black.png" Part(90, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturefocused = "themes/Black.png" Part(135, 64, 45, 50) Middle(10, 0, 25, 50);
+    texturehover = "themes/Black.png" Part(45, 64, 45, 50) Middle(10, 0, 25, 50);
+}
+
+Picture._background {
+    Size = (1066, 600);
+
+    Renderer {
+        opacity = 1;
+        texture = "assets/images/atmbackground.png";
+    }
+}
+
+Label._creatortag {
+    AutoSize = true;
+    IgnoreMouseEvents = true;
+    Position = (990, 590);
+    ScrollbarPolicy = Never;
+    Size = (74, 11);
+    Text = "By Haadi Farhan";
+    TextSize = 8;
+
+    Renderer {
+        opacity = 100;
+        textcolor = #3F3532;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/BabyBlue.png" Part(20, 2, 16, 16);
+            texturearrowup = "themes/BabyBlue.png" Part(2, 2, 16, 16);
+            texturethumb = "themes/BabyBlue.png" Part(414, 2, 16, 32);
+            texturetrack = "themes/BabyBlue.png" Part(432, 2, 16, 32);
+        }
+    }
+}
+
+Label._label1 {
+    AutoSize = true;
+    IgnoreMouseEvents = true;
+    Position = (223, 230);
+    ScrollbarPolicy = Never;
+    Size = (273.2, 51);
+    Text = "Current Limit:";
+    TextSize = 38;
+
+    Renderer {
+        textcolor = #AAB8CC;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/Black.png" Part(163, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowdownhover = "themes/Black.png" Part(183, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowup = "themes/Black.png" Part(163, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturearrowuphover = "themes/Black.png" Part(183, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturethumb = "themes/Black.png" Part(143, 154, 20, 20);
+            texturethumbhover = "themes/Black.png" Part(143, 174, 20, 20);
+            texturetrack = "themes/Black.png" Part(123, 154, 20, 20);
+            texturetrackhover = "themes/Black.png" Part(123, 174, 20, 20);
+        }
+    }
+}
+
+Label.currentlimitText {
+    HorizontalAlignment = Center;
+    IgnoreMouseEvents = true;
+    Position = (523, 230);
+    ScrollbarPolicy = Never;
+    Size = (310, 55);
+    TextSize = 38;
+
+    Renderer {
+        backgroundcolor = #AAB8CC;
+        borders = (2, 2, 2, 2);
+        font = "assets/fonts/couriernew.ttf";
+        opacity = 20;
+        textcolor = black;
+        textstyle = Bold;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/Black.png" Part(163, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowdownhover = "themes/Black.png" Part(183, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowup = "themes/Black.png" Part(163, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturearrowuphover = "themes/Black.png" Part(183, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturethumb = "themes/Black.png" Part(143, 154, 20, 20);
+            texturethumbhover = "themes/Black.png" Part(143, 174, 20, 20);
+            texturetrack = "themes/Black.png" Part(123, 154, 20, 20);
+            texturetrackhover = "themes/Black.png" Part(123, 174, 20, 20);
+        }
+    }
+}
+
+Button.backButton {
+    Position = (393, 446);
+    Size = (130, 70);
+    Text = Back;
+    TextSize = 20;
+    renderer = &1;
+}
+
+Button.changeButton {
+    Position = (543, 446);
+    Size = (130, 70);
+    Text = Change;
+    TextSize = 20;
+    renderer = &1;
+}
+
+Label._label2 {
+    AutoSize = true;
+    IgnoreMouseEvents = true;
+    Position = (263, 320);
+    ScrollbarPolicy = Never;
+    Size = (234.2, 51);
+    Text = "Used Today:";
+    TextSize = 38;
+
+    Renderer {
+        textcolor = #AAB8CC;
+        textoutlinecolor = black;
+        textoutlinethickness = 2;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/Black.png" Part(163, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowdownhover = "themes/Black.png" Part(183, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowup = "themes/Black.png" Part(163, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturearrowuphover = "themes/Black.png" Part(183, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturethumb = "themes/Black.png" Part(143, 154, 20, 20);
+            texturethumbhover = "themes/Black.png" Part(143, 174, 20, 20);
+            texturetrack = "themes/Black.png" Part(123, 154, 20, 20);
+            texturetrackhover = "themes/Black.png" Part(123, 174, 20, 20);
+        }
+    }
+}
+
+Label.usedlimitText {
+    HorizontalAlignment = Center;
+    IgnoreMouseEvents = true;
+    Position = (523, 320);
+    ScrollbarPolicy = Never;
+    Size = (310, 55);
+    TextSize = 38;
+
+    Renderer {
+        backgroundcolor = #AAB8CC;
+        borders = (2, 2, 2, 2);
+        font = "assets/fonts/couriernew.ttf";
+        opacity = 20;
+        textcolor = black;
+        textstyle = Bold;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/Black.png" Part(163, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowdownhover = "themes/Black.png" Part(183, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowup = "themes/Black.png" Part(163, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturearrowuphover = "themes/Black.png" Part(183, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturethumb = "themes/Black.png" Part(143, 154, 20, 20);
+            texturethumbhover = "themes/Black.png" Part(143, 174, 20, 20);
+            texturetrack = "themes/Black.png" Part(123, 154, 20, 20);
+            texturetrackhover = "themes/Black.png" Part(123, 174, 20, 20);
+        }
+    }
+}
+
+Label._title {
+    AutoSize = true;
+    IgnoreMouseEvents = true;
+    Position = (-387 + 533, 110);
+    ScrollbarPolicy = Never;
+    Size = (781.6, 81);
+    Text = "Account Withdrawal Limit";
+    TextSize = 60;
+
+    Renderer {
+        textcolor = #AAB8CC;
+        textoutlinecolor = black;
+        textoutlinethickness = 1;
+        texturebackground = None;
+
+        scrollbar {
+            texturearrowdown = "themes/Black.png" Part(163, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowdownhover = "themes/Black.png" Part(183, 174, 20, 20) Middle(0, 1, 20, 19);
+            texturearrowup = "themes/Black.png" Part(163, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturearrowuphover = "themes/Black.png" Part(183, 154, 20, 20) Middle(0, 0, 20, 19);
+            texturethumb = "themes/Black.png" Part(143, 154, 20, 20);
+            texturethumbhover = "themes/Black.png" Part(143, 174, 20, 20);
+            texturetrack = "themes/Black.png" Part(123, 154, 20, 20);
+            texturetrackhover = "themes/Black.png" Part(123, 174, 20, 20);
+        }
+    }
+}
